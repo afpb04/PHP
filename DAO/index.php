@@ -20,8 +20,13 @@ require_once("config.php");
 
 //carrega um usuario pelo login e senha
 
-$usuario = new Usuario();
-$usuario->login("user","12345");
-echo $usuario;
+//$usuario = new Usuario();
+//$usuario->login("user","12345");
+//echo $usuario;
+
+$aluno = new Usuario("aluno", "@lun0");
+$aluno->insert();
+echo $aluno;
+
 
 ?>
