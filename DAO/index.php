@@ -23,10 +23,15 @@ require_once("config.php");
 //$usuario = new Usuario();
 //$usuario->login("user","12345");
 //echo $usuario;
+//crinando um novo usuario
+//$aluno = new Usuario("aluno", "@lun0");
+//$aluno->insert();
+//echo $aluno;
 
-$aluno = new Usuario("aluno", "@lun0");
-$aluno->insert();
-echo $aluno;
 
+$usuario = new Usuario();
+$usuario->loadById(8);
+$usuario->update("professor","profe");
+echo $usuario;
 
 ?>
