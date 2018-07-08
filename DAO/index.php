@@ -28,10 +28,16 @@ require_once("config.php");
 //$aluno->insert();
 //echo $aluno;
 
+//altera um usuario
+//$usuario = new Usuario();
+//$usuario->loadById(8);
+//$usuario->update("professor","profe");
+//echo $usuario;
 
 $usuario = new Usuario();
-$usuario->loadById(8);
-$usuario->update("professor","profe");
+$usuario->loadById(7);
+$usuario->delete();
+
 echo $usuario;
 
 ?>
