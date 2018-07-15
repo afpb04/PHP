@@ -9,8 +9,8 @@ $fileinfo = new finfo(FILEINFO_MIME_TYPE);
 $mimetype = $fileinfo->file($filename);
 
 $base64encode ="data:".$mimetype.";base64," . $base64;
-echo $base64encode;
+//echo $base64encode;
 ?>
-<a href="<?php $base64encode ?>" target="_blank">link para imagem</a>
+<a href="<?=$base64encode ?>" target="_blank">link para imagem</a>
 
-<img src="<?php $base64encode ?>"/>
+<img src="<?=$base64encode ?>"/>
